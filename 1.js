@@ -1,17 +1,13 @@
-// const keyword in JavaScript: The const keyword has all the properties that are the same as the let keyword, except the user cannot update it.
+// let keyword in JavaScript: The let keyword is an improved version of the var keyword. 
 
-// Scope: block scoped: When users declare a const variable, they need to initialize it, otherwise, it returns an error. The user cannot update the const variable once it is declared. 
+// Scope: block scoped: The scope of a let variable is only block scoped. It can’t be accessible outside the particular block ({block}). Let’s see the below example.
 
-// Example 1: We are changing the value of the const variable so that it returns an error. The output is shown in the console.
+// Example 1: The output is shown in the console.
 
-    const a = 10;
-    function f() {
-          a = 9;
-        console.log("a===>",a)
-    }
-    f();
-   
-
-// Output:
-// a=9
-// TypeError:Assignment to constant variable.
+let a = 10;
+function f() {
+    let b = 9
+    console.log("b===>",b);
+    console.log("a===>",a);
+}
+f();
